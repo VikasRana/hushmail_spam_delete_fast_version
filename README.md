@@ -17,4 +17,4 @@ In line 45, assert assert_string2.text == ''; put your username in quotes that y
 
 In line 61, spam = ["", ""]; add spammers here within double quotes
 
-To run the script: python hush_spam_delete.py
+To run the script: python hush_fast_spam_del.py
