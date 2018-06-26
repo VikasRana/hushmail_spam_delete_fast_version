@@ -105,4 +105,4 @@ def usr_inp():
 		time.sleep(5)
 
 
-usr_inp() # to_start_the_function_we_just_created
+usr_inp() # to_start_the_function
