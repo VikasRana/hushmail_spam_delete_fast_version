@@ -96,7 +96,7 @@ def usr_inp():
 	    time.sleep(1)
 	    driver.find_element_by_xpath("//*[@id='element_delete-message-dialog-template']/div/div[3]/div[3]/form/div[2]/input").click(); # clicks_the_final_delete_all
 	    time.sleep(3)
-	    driver.get("https://secure.hushmail.com/1.1.5/preview/hushmail/bassiq@hushmail.com/folder/Inbox"); # goes_back_to_the_inbox
+	    driver.get("https://secure.hushmail.com/1.1.5/preview/hushmail/{}/folder/Inbox".format(usr)); # goes_back_to_the_inbox
 	elif usr_inpt == 'no':
 		print("Thank you for using my service.")
 	else:
