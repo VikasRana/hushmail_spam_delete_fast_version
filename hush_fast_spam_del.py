@@ -46,10 +46,13 @@ assert assert_string2.text == ''; # hence_verified_that_we_are_on_the_correct_pa
 time.sleep(2)
 
 # hiding_the_warning_that_aks_to_get_premium_hushmail_(if_its_there)
-hide = driver.find_element_by_class_name("event_hide-status")
-if hide:
-	hide.click();
-else:
+try:
+	hide = driver.find_element_by_class_name("event_hide-status");
+	if hide:
+		hide.click();
+	else:
+		pass
+except ElementNotVisibleException as e:
 	pass
 time.sleep(2)
 
